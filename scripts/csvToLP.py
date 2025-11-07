@@ -70,6 +70,7 @@ def convert_csv_to_geojson(csv_file, geojson_file):
                         "properties": {
                             "museum_id": cleaned_row.get('museum_id'),
                             "name": cleaned_row.get('Name_of_museum'),
+                            "title": cleaned_row.get('Name_of_museum'),
                             "address_line_1": cleaned_row.get('Address_line_1'),
                             "address_line_2": cleaned_row.get('Address_line_2'),
                             "village_town_city": cleaned_row.get('Village,_Town_or_City'),

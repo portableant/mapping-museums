@@ -1,0 +1,38 @@
+{
+  "initial_bounds": [-7.9, 49.5, 2.2, 59.4],
+  "map_style": "./map-style-OSM.json",
+  "data": [
+    {
+      "name": "Roman Republican Coins",
+      "format": "LINKED_PLACES",
+      "src": "./data/republican.geojson",
+      "attribution": "Roman Republican Coins CC-BY Portable Antiquities Scheme Contributors"
+    }
+  ],
+  "facets": [
+    {
+      "name": "Denomination", "path": ["properties", "denomination"]
+    },
+    {
+      "name": "Mint", "path": ["properties", "mint"]
+    },
+    {
+      "name": "Issuer", "path": ["properties", "ruler"]
+    },
+    {
+      "name": "Moneyer", "path": ["properties", "moneyer"]
+    },
+    {
+      "name": "Material", "path": ["properties", "materialTerm"]
+    },
+    "has_image",
+    "type"
+  ],
+  "link_icons": [
+    { "pattern": "en.wikipedia.org", "img": "./logos/en.wikipedia.org.png", "label": "Wikipedia" },
+    { "pattern": "pleiades.stoa.org", "img": "./logos/pleiades.png", "label": "Pleiades" },
+    { "pattern": "nomisma.org", "img": "./logos/nomisma.png", "label": "Nomisma" },
+    { "pattern": "viaf.org", "img": "./logos/viaf.png", "label": "VIAF" },
+    { "pattern": "dbpedia.org", "img": "./logos/dbpedia.png", "label": "Dbpedia" }
+  ]
+}
