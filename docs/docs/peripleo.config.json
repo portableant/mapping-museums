@@ -1,0 +1,37 @@
+{
+  "initial_bounds": [-7.9, 49.5, 2.2, 59.4],
+  "map_style": "./map-style-OSM.json",
+  "welcome_message": "welcome.md",
+  "data": [
+    {
+      "name": "Mapping Museums Data",
+      "format": "LINKED_PLACES",
+      "src": "./data/museums.geojson",
+      "attribution": "Data downloaded from the Mapping Museums website at www.mappingmuseums.org Accessed on 7th November 2025"
+    }
+  ],
+  "facets": [
+    {
+      "name": "Year opened", "path": ["properties", "created"]
+    },
+    {
+      "name": "Year closed", "path": ["properties", "closed"]
+    },
+    {
+      "name": "Subject of Museum", "path": ["properties", "subject_matter"]
+    },
+    {
+      "name": "Museum size", "path": ["properties", "size"]
+    },
+    {
+      "name": "Accreditation status", "path": ["properties", "accreditation"]
+    }
+  ],
+  "link_icons": [
+    { "pattern": "en.wikipedia.org", "img": "./logos/en.wikipedia.org.png", "label": "Wikipedia" },
+    { "pattern": "pleiades.stoa.org", "img": "./logos/pleiades.png", "label": "Pleiades" },
+    { "pattern": "nomisma.org", "img": "./logos/nomisma.png", "label": "Nomisma" },
+    { "pattern": "viaf.org", "img": "./logos/viaf.png", "label": "VIAF" },
+    { "pattern": "dbpedia.org", "img": "./logos/dbpedia.png", "label": "Dbpedia" }
+  ]
+}
